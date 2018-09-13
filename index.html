@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <title></title>
+
+
+
+</head>
+
+<header>
+    <div id="logo">
+        <img src="logoer-02.png" alt="logo" class="logoet">
+    </div>
+
+    <h1>Chennai Organic</h1>
+    <h3>Indian Cuisine</h3>
+
+
+</header>
+
+<body>
+
+    <section id="modal">
+        <button>Close</button>
+        <div id="modal-content">
+
+            <img class="modal-billede" src="" alt="">
+            <p class="langbeskrivelse"></p>
+            <p>Pris: <span class="pris"></span></p>
+
+
+        </div>
+    </section>
+
+    <nav>
+
+
+        <a href="#menu">Menu</a>
+        <a href="#bestilbord">Bestil Bord</a></li>
+        <a href="#kontakt">Kontakt</a>
+
+
+    </nav>
+
+
+    <section class="data-container"></section>
+
+    <template class="data-template">
+        <article>
+
+
+            <img src="" alt="">
+            <h2 class="kategori"></h2>
+            <p class="navn"></p>
+            <p class="kortbeskrivelse"></p>
+            <p>Pris: <span class="pris"></span></p>
+
+
+
+        </article>
+    </template>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", hentJson);
+        let babus = [];
+        let kategoriFilter = "alle";
+        let knapper = document.querySelector(".data-menu");
+        let modal = document.querySelector("#modal")
+        async function hentJson() {
+            let myJson = await fetch("menu.json");
+            babus = await myJson.json();
+            console.log(babus[0].id);
+            visBabus();
+        }
+        /*
+                document.addEventListener("DOMContentLoaded", hentJson);
+                async function hentJson() {
+                    let myJson = await fetch("menu.json");
+                    babus = await myJson.json();
+                    visBabus();
+                    console.log(babus);
+                }
+                */
+        document.querySelectorAll(".menu-item").forEach(knap => {
+            console.log(knap);
+            knap.addEventListener("click", filtrering)
+        });
+
+        function filtrering() {
+            kategoriFilter = this.getAttribute("data-menu");
+            console.log(kategoriFilter);
+            visBabus();
+        }
+
+        function visBabus() {
+            console.log("1", kategoriFilter);
+            let dest = document.querySelector(".data-container"),
+                temp = document.querySelector(".data-template");
+
+            dest.textContent = "";
+            //løb personlisten igennem og lav en klon
+            babus.forEach(babu => {
+                console.log("2", kategoriFilter);
+                if (babu.kategori == kategoriFilter || kategoriFilter == "alle") {
+                    console.log("3", kategoriFilter, babu.kategori);
+                    let klon = temp.cloneNode(true).content;
+                    //indsæt data i klonen
+                    klon.querySelector(".kategori").textContent = babu.navn;
+                    klon.querySelector(".kortbeskrivelse").textContent = babu.kortbeskrivelse;
+                    //klon.querySelector(".langbeskrivelse").textContent = babu.langbeskrivelse;//
+                    //klon.querySelector(".oprindelsesregion").textContent = babu.oprindelsesregion;
+                    klon.querySelector("img").src = "img/small/" + babu.billede + "-sm.png";
+                    klon.querySelector("img").addEventListener("click", () => {
+                        visModal(babu);
+                    });
+                    klon.querySelector(".pris").textContent = babu.pris;
+                    dest.appendChild(klon);
+                }
+            });
+        }
+
+        function visModal(retten) {
+            modal.classList.add("vis");
+
+            modal.querySelector(".modal-billede").src = "imgs/medium/" + retten.billede + "-ms.jpg";
+            modal.querySelector(".pris").textContent = retten.pris;
+            modal.querySelector("button").addEventListener("click", skjulModal);
+        }
+
+        function skjulModal() {
+            //window.scrollTo(0);
+            console.log("test");
+            modal.classList.remove("vis");
+        }
+
+    </script>
+</body>
+
+
+</html>
+</body>
+
+
+</html>

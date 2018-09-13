@@ -1,72 +1,72 @@
 [
   {
-    "Kategori": "Forret",
-    "Navn": "Chicken Pakoras",
-    "Kortbeskrivelse": "Kylling med løg, ingefær, green chili, rød chili, masala, gurkamaje og lemon",
-    "Billede": "chickenpakoras",
-    "Pris": 35
+    "kategori": "forret",
+    "navn": "Chicken Pakoras",
+    "kortbeskrivelse": "Kylling med løg, ingefær, green chili, rød chili, masala, gurkamaje og lemon",
+    "billede": "chickenpakoras",
+    "pris": 35
   },
   {
-    "Kategori": "Forret",
-    "Navn": "Samosa - Kylling/oksekød/vegetar",
-    "Kortbeskrivelse": "Samosa med enten kylling, oksekød og vegetar",
-    "Billede": "samosa",
-    "Pris": 39
+    "kategori": "forret",
+    "navn": "Samosa - Kylling/oksekød/vegetar",
+    "kortbeskrivelse": "Samosa med enten kylling, oksekød og vegetar",
+    "billede": "samosa",
+    "pris": 39
   },
   {
-    "Kategori": "Forret",
-    "Navn": "Naan brød",
-    "Kortbeskrivelse": "Sprøde naan brød med hvidløgsolie og sesamfrø",
-    "Billede": "naanbrod",
-    "Pris": 27
+    "kategori": "forret",
+    "navn": "Naan brød",
+    "kortbeskrivelse": "Sprøde naan brød med hvidløgsolie og sesamfrø",
+    "billede": "naanbrod",
+    "pris": 27
   },
   {
-    "Kategori": "Forret",
-    "Navn": "Chintha chiguru pappu",
-    "Kortbeskrivelse": "Gul moog dal med kandi pappu og grønne chillier",
-    "Billede": "pappu",
-    "Pris": 49
+    "kategori": "forret",
+    "navn": "Chintha chiguru pappu",
+    "kortbeskrivelse": "Gul moog dal med kandi pappu og grønne chillier",
+    "billede": "pappu",
+    "pris": 49
   },
   {
-    "Kategori": "Hovedret",
-    "Navn": "Butter Chicken Prawns",
-    "Kortbeskrivelse": "Klassisk butter chicken sovs med tigerrejser",
-    "Billede": "butterprawns",
-    "Pris": 130
+    "kategori": "hovedret",
+    "navn": "Butter Chicken Prawns",
+    "kortbeskrivelse": "Klassisk butter chicken sovs med tigerrejser",
+    "billede": "butterprawns",
+    "pris": 130
   },
   {
-    "Kategori": "Hovedret",
-    "Navn": "Dal Makhni",
-    "Kortbeskrivelse": "Linser med lækre krydderier og chili",
-    "Billede": "dalmakhni",
-    "Pris": 120
+    "kategori": "hovedret",
+    "navn": "Dal Makhni",
+    "kortbeskrivelse": "Linser med lækre krydderier og chili",
+    "billede": "dalmakhni",
+    "pris": 120
   },
   {
-    "Kategori": "Hovedret",
-    "Navn": "Tikki Tanadori Chicken",
-    "Kortbeskrivelse": "Ingefær, hvidløg, chili med yougurt og kylling",
-    "Billede": "tanadoritikki",
-    "Pris": 119
+    "kategori": "hovedret",
+    "navn": "Tikki Tanadori Chicken",
+    "kortbeskrivelse": "Ingefær, hvidløg, chili med yougurt og kylling",
+    "billede": "tanadoritikki",
+    "pris": 119
   },
   {
-    "Kategori": "Hovedret",
-    "Navn": "Thakkali Pachadi - Lamb/Chicken",
-    "Kortbeskrivelse": "Tomat, tamarind og gurkamaje",
-    "Billede": "thakkalipachadi",
-    "Pris": 129
+    "kategori": "hovedret",
+    "navn": "Thakkali Pachadi - Lamb/Chicken",
+    "kortbeskrivelse": "Tomat, tamarind og gurkamaje",
+    "billede": "thakkalipachadi",
+    "pris": 129
   },
   {
-    "Kategori": "Hovedret",
-    "Navn": "Chicken Korma",
-    "Kortbeskrivelse": "Kylling med tomat, ingefær, hvidløg garam masala rød peber, mandler og kardemomme",
-    "Billede": "chickenkorma",
-    "Pris": 119
+    "kategori": "hovedret",
+    "navn": "Chicken Korma",
+    "kortbeskrivelse": "Kylling med tomat, ingefær, hvidløg garam masala rød peber, mandler og kardemomme",
+    "billede": "chickenkorma",
+    "pris": 119
   },
   {
-    "Kategori": "Hovedret",
-    "Navn": "Butter Chicken",
-    "Kortbeskrivelse": "Garam masala, chili, koriander, smør, hvidløg, ingefær",
-    "Billede": "butterchicken",
-    "Pris": 110
+    "kategori": "hovedret",
+    "navn": "Butter Chicken",
+    "kortbeskrivelse": "Garam masala, chili, koriander, smør, hvidløg, ingefær",
+    "billede": "butterchicken",
+    "pris": 110
   }
 ]
