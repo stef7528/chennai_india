@@ -1,0 +1,76 @@
+[{
+        "kategori": "forret",
+        "navn": "Chicken Pakoras",
+        "kortbeskrivelse": "Kylling med løg, ingefær, green chili, rød chili, masala, gurkamaje og lemon",
+        "billede": "chickenpakoras",
+        "pris": 35
+
+	},
+    {
+        "kategori": "forret",
+        "navn": "Samosa - Kylling/oksekød/vegetar",
+        "kortbeskrivelse": "Samosa med enten kylling, oksekød og vegetar",
+        "billede": "samosa",
+        "pris": 39
+
+	},
+    {
+        "kategori": "forret",
+        "navn": "Naan brød",
+        "kortbeskrivelse": "Sprøde naan brød med hvidløgsolie og sesamfrø",
+        "billede": "naanbrod",
+        "pris": 27
+
+	},
+    {
+        "kategori": "forret",
+        "navn": "Chintha chiguru pappu",
+        "kortbeskrivelse": "Gul moog dal med kandi pappu og grønne chillier",
+        "billede": "pappu",
+        "pris": 49
+
+	},
+    {
+        "kategori": "hovedret",
+        "navn": "Butter Chicken Prawns",
+        "kortbeskrivelse": "Klassisk butter chicken sovs med tigerrejser",
+        "billede": "butterprawns",
+        "pris": 130
+
+	},
+    {
+        "kategori": "hovedret",
+        "navn": "Dal Makhni",
+        "kortbeskrivelse": "Linser med lækre krydderier og chili",
+        "billede": "dalmakhni",
+        "pris": 120
+	},
+    {
+        "kategori": "hovedret",
+        "navn": "Tikki Tanadori Chicken",
+        "kortbeskrivelse": "Ingefær, hvidløg, chili med yougurt og kylling",
+        "billede": "tanadoritikki",
+        "pris": 119
+	},
+    {
+        "kategori": "hovedret",
+        "navn": "Thakkali Pachadi - Lamb/Chicken",
+        "kortbeskrivelse": "Tomat, tamarind og gurkamaje",
+        "billede": "thakkalipachadi",
+        "pris": 129
+	},
+    {
+        "kategori": "hovedret",
+        "navn": "Chicken Korma",
+        "kortbeskrivelse": "Kylling med tomat, ingefær, hvidløg garam masala rød peber, mandler og kardemomme",
+        "billede": "chickenkorma",
+        "pris": 119
+	},
+    {
+        "kategori": "hovedret",
+        "navn": "Butter Chicken",
+        "kortbeskrivelse": "Garam masala, chili, koriander, smør, hvidløg, ingefær",
+        "billede": "butterchicken",
+        "pris": 110
+	}
+]
