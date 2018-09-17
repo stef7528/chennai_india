@@ -2,7 +2,7 @@
 <html lang="">
 
 <head>
-    <meta charset="utf-16">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
@@ -12,18 +12,20 @@
 
 </head>
 
-<header>
-    <div id="logo">
-        <img src="logoer-02.png" alt="logo" class="logoet">
-    </div>
-
-    <h1>Chennai Organic</h1>
-    <h3>Indian Cuisine</h3>
-
-
-</header>
-
 <body>
+
+    <header>
+
+
+        <div id="logo">
+            <img src="logoer-02.png" alt="logo" class="logoet">
+        </div>
+
+        <h1>Chennai Organic</h1>
+        <h3>Indian Cuisine</h3>
+
+
+    </header>
 
     <nav>
         <a href="#menu">Menu</a>
@@ -32,43 +34,55 @@
 
     </nav>
 
+
     <div id="intro">
         <h4>Vores koncept</h4>
 
-        <p>Chennai Organic er en resturant, som er baseret på økologi og organisk mad. Vores råvarer stammer fra byen Chennai i Indien hvor vi støtter den lokale befolkning ved køb af afgrøder fra deres landbrug. Dette er med til at give lokalsamfundet et friskt pust og lader dem finde sig selv igen.
+        <div class="intro-tekst">
+            <p>Chennai Organic er en resturant, som er baseret på økologi og organisk mad. Vores råvarer stammer fra byen Chennai i Indien hvor vi støtter den lokale befolkning ved køb af afgrøder fra deres landbrug. Dette er med til at give lokalsamfundet et friskt pust og lader dem finde sig selv igen.
 
-        </p>
+            </p>
 
-        <p>Vi lægger meget vægt på kvalitet og går samtidig utrolig meget op i at vores råvarer er miljøvenlige. Med vores friske råvarer og dedikerede kokke får du en kulinarisk madoplevelse udover det sædvanlige. Vær med til at støtte det indiske samfund og få samtidig en god mad oplevelse. </p>
+            <p>Vi lægger meget vægt på kvalitet og går samtidig utrolig meget op i at vores råvarer er miljøvenlige. Med vores friske råvarer og dedikerede kokke får du en kulinarisk madoplevelse udover det sædvanlige. Vær med til at støtte det indiske samfund og få samtidig en god mad oplevelse. </p>
+
+        </div>
     </div>
 
 
 
+    <div id="krydder">
+        <div class="pic1">
+            <img src="farm.png" alt="damer">
+        </div>
 
-    <img src="spice.png" alt="krydderier">
+        <div class="pic2">
+            <img src="spice.png" alt="krydderier">
+        </div>
 
+        <div class="pic3">
+            <img src="manfarm.png" alt="farm">
+        </div>
 
+    </div>
 
 
     <section id="modal">
         <button>Close</button>
         <div id="modal-content">
-
+            <h2 class="modal-navn"></h2>
             <img class="modal-billede" src="" alt="">
-            <h2 class="kategori"></h2>
             <p class="kortbeskrivelse"></p>
-            <span class="pris">
-            </span>
-
+            <p class="pris"></p>
 
 
         </div>
     </section>
 
-
     <div id="menu">
 
         <img src="blomst-header-02.png" alt="blomst">
+
+        <h3>Menu</h3>
 
         <section class="data-forretter">
             <h2>Forret</h2>
@@ -86,11 +100,12 @@
         <article>
 
 
-            <img src="" alt="">
+
             <h2 class="kategori"></h2>
             <p class="navn"></p>
             <p class="kortbeskrivelse"></p>
-            <p>Pris: <span class="pris"></span></p>
+            <span class="pris"></span>
+
 
 
 
@@ -98,11 +113,9 @@
     </template>
 
 
-    <img src="farm.png" alt="farm">
-
     <div id="afslutning">
 
-        <p>Hvis du har nogle generalle spørgsmål, eller ønsker<br> at bestille bord til mere end 6 personer er du velkommen til at ringe til os.</p>
+        <p>Hvis du har nogle generalle spørgsmål, eller ønsker<br> at bestille bord til mere end 6 personer er du velkommen <br> til at ringe til os.</p>
 
         <p> Tlf: 48 23 96 75</p>
 
@@ -139,7 +152,6 @@
                 klon.querySelector(".navn").addEventListener("click", () => {
                     visModal(babu);
                 });
-                klon.querySelector(".pris").textContent = babu.pris;
 
                 if (babu.kategori == "forret") {
                     destfor.appendChild(klon);
@@ -154,8 +166,8 @@
         }
 
         function visModal(retten) {
-            modal.classList.add("vis");
 
+            modal.classList.add("vis");
             modal.querySelector(".modal-billede").src = "img/small/" + retten.billede + "-sm.png";
             modal.querySelector(".kortbeskrivelse").textContent = retten.kortbeskrivelse;
             modal.querySelector(".pris").textContent = retten.pris;
@@ -166,15 +178,12 @@
             console.log("test");
             modal.classList.remove("vis");
         }
+
     </script>
 
 
 
 
-</body>
-
-
-</html>
 </body>
 
 
