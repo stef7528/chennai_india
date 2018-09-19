@@ -28,11 +28,13 @@
     </header>
 
     <nav>
+
         <a href="#menu">Menu</a>
-        <a href="#bestilbord">Bestil Bord</a></li>
+        <a href="single.html">Bestil Bord</a></li>
         <a href="#kontakt">Kontakt</a>
 
     </nav>
+
 
 
     <div id="intro">
@@ -60,15 +62,20 @@
         </div>
 
         <div class="pic3">
-            <img src="manfarm.png" alt="farm">
+            <img src="market.png" alt="farm">
         </div>
 
     </div>
 
 
     <section id="modal">
+        <!-- knap man skal klikke på når modal vinduet skal lukkes-->
         <button>Close</button>
+
+        <!-- #modal-content er begregnet til indholdet, og har en grøn baggrund-->
         <div id="modal-content">
+
+            <!--overskrift til rettens navn mmm. -->
             <h2 class="modal-navn"></h2>
             <img class="modal-billede" src="" alt="">
             <p class="kortbeskrivelse"></p>
@@ -113,76 +120,62 @@
     </template>
 
 
-    <div id="afslutning">
+    <div id="galleri">
 
-        <p>Hvis du har nogle generalle spørgsmål, eller ønsker<br> at bestille bord til mere end 6 personer er du velkommen <br> til at ringe til os.</p>
+        <div class="billede1">
+            <img src="Dal-Makhni.png" alt=butter>
+        </div>
 
-        <p> Tlf: 48 23 96 75</p>
+        <div class="billede2">
+            <img src="samosa.png" alt=butter>
+        </div>
+
+        <div class="billede3">
+            <img src="Thakkali-Pachadi.png" alt=butter>
+        </div>
+
+        <div class="billede4">
+            <img src="ChinthaChiguru.png" alt=butter>
+        </div>
+
+        <div class="billede5">
+            <img src="butterchicken.png" alt=butter>
+        </div>
+
+        <div class="billede6">
+            <img src="naanbr%C3%B8d.png" alt=butter>
+        </div>
+
+
 
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", hentJson);
-        let babus = [];
-        let kategoriFilter = "alle";
-        let knapper = document.querySelector(".data-menu");
-        let modal = document.querySelector("#modal")
-        async function hentJson() {
-            let myJson = await fetch("menu3.json");
-            babus = await myJson.json();
-            console.log(babus)
+    <div id="kontakt">
 
-            visBabus();
-        }
+        <h2>Kontakt</h2>
 
-        function visBabus() {
-            let destfor = document.querySelector(".data-forretter"),
-                desthoved = document.querySelector(".data-hovedretter"),
-                temp = document.querySelector(".data-template");
+        <p>Hvis du har nogle generalle spørgsmål angående menukort, <br> allergier m.m, eller ønsker at bestille bord til mere end 6 personer <br> er du velkommen til at ringe til os.</p>
 
+        <p> Tlf: 48 23 96 75</p>
 
-            //løb personlisten igennem og lav en klon
-            babus.forEach(babu => {
-                console.log(babu);
+        <p>Chennai Organic <br>Rantzausgade 28 <br> 2200 København N</p>
 
-                let klon = temp.cloneNode(true).content;
-                //indsæt data i klonen
-                klon.querySelector(".navn").textContent = babu.navn;
-
-                klon.querySelector(".navn").addEventListener("click", () => {
-                    visModal(babu);
-                });
-
-                if (babu.kategori == "forret") {
-                    destfor.appendChild(klon);
-                }
-
-                if (babu.kategori == "hovedret") {
-                    desthoved.appendChild(klon);
-                }
-
-
-            });
-        }
-
-        function visModal(retten) {
-
-            modal.classList.add("vis");
-            modal.querySelector(".modal-billede").src = "img/small/" + retten.billede + "-sm.png";
-            modal.querySelector(".kortbeskrivelse").textContent = retten.kortbeskrivelse;
-            modal.querySelector(".pris").textContent = retten.pris;
-            modal.querySelector("button").addEventListener("click", skjulModal);
-        }
-
-        function skjulModal() {
-            console.log("test");
-            modal.classList.remove("vis");
-        }
-
-    </script>
+    </div>
 
 
 
+
+    <footer>
+        <div class="footer">
+
+            <p>&copy; Stefani Arsovic<p>
+
+
+        </div>
+    </footer>
+
+
+    <script src="java.js"></script>
 
 </body>
 
